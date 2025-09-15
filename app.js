@@ -20,7 +20,7 @@ app.post("/createUser", (req, res) => {
     console.log("error...",err)
     res.json({
       Error: err,
-      message: "user creation failed....",
+      message: "user creation failed.....",
     });
   }
 });
