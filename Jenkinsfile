@@ -25,7 +25,7 @@ pipeline {
 
         stage('Run New Container') {
             steps {
-                sh 'docker run -d -p 80:$APP_PORT --name $CONTAINER_NAME --restart unless-stopped $IMAGE_NAME:latest'
+                sh 'docker run -d -p 4000:$APP_PORT --name $CONTAINER_NAME --restart unless-stopped $IMAGE_NAME:latest'
             }
         }
     }
